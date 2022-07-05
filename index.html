@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project for lgin and form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!--student add form-->
+    <div class="form" id="openform">
+        <h2>Add Student</h2>
+        <from>
+            <div><input type="text" name="name" placeholder="Enter Full Name...." class="txt"></div>
+            <div><input type="number" placeholder="Enter Your Number" class="txt"></div>
+            <div><input type="email" placeholder="Enter Your Email" class="txt"></div>
+            <div><input type="text" placeholder="Your Course" class="txt"></div>
+            <div>
+                <input type="submit" name="Sumbit" value="Sumbit" class="myform">
+                <input type="button" name="Close" value="Close" class="myform" onclick="closeForm()">
+            </div>
+        </from>
+        <!-------admin login-->
+    </div>
+    <div class="admin" id="adminform">
+        <h2>Admin Login</h2>
+        <from>
+            <div><input type="text" name="name" placeholder="Enter Your Id" class="txt"></div>
+            <div><input type="password" placeholder="Password" class="txt"></div>
+            <div>
+                <input type="submit" name="Sumbit" value="Sumbit" class="myform">
+                <input type="button" name="Close" value="Close" class="myform" onclick="closeLogin()">
+            </div>
+        </from>
+    </div>
+    <!--heder part-->
+    <div class="topbar">
+        <h3>C<span>N</span>C</h3>
+        <ul>
+            <li onclick="login()">Admin</li>            
+            <li>User</li>
+        </ul>
+    </div>
+    <!--contant-->
+    <div class="contant">
+<!------side---->
+        <div class="side">
+            <ul>
+                <li><a href="./student.html">Student</a></li>
+                <li><a href="">Admisson</a></li>
+                <li><a href="">Enquiry</a></li>
+                <li><a href="">Branches</a></li>
+                <li><a href="">Teachers</a></li>
+            </ul>
+        </div>
+
+        <!-------side container------>
+        <div class="container">
+            <h1>
+                Student <button type="button" onclick="openForm()">+Add New</button>
+            </h1>
+            <div>
+                <p>All student List</p>
+            </div>
+            <div>
+                <select>
+                    <option>Select</option>
+                    <option>Bulk Action</option>
+                    <option>Edit</option>
+                    <option>Delete</option>
+                </select>
+                <button type="button">Apply</button>
+                <input type="text"  name="search" placeholder="Search here...." class="btn">
+                <button type="submit" value="submit">Search</button>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th><input type="checkbox"> Sr No.</th>
+                        <th>Name</th>
+                        <th>Phone N.</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>View</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr class="strips">
+                        <td><input type="checkbox"> 1.</td>
+                        <td>Rakesh</td>
+                        <td>6587452145</td>
+                        <td>djsj@gmail.com</td>
+                        <td>PHP</td>
+                        <td><button type="button">View</button></td>
+                        <td><button type="button">Edit</button></td>
+                        <td><button type="button">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"> 2.</td>
+                        <td>Pinki</td>
+                        <td>9555684785</td>
+                        <td>pinki@gmail.com</td>
+                        <td>Python</td>
+                        <td><button type="button">View</button></td>
+                        <td><button type="button">Edit</button></td>
+                        <td><button type="button">Delete</button></td>
+                    </tr>
+                    <tr class="strips">
+                        <td><input type="checkbox"> 3.</td>
+                        <td>Amit</td>
+                        <td>6521422145</td>
+                        <td>hnbgh@gmail.com</td>
+                        <td>Java</td>
+                        <td><button type="button">View</button></td>
+                        <td><button type="button">Edit</button></td>
+                        <td><button type="button">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"> 4.</td>
+                        <td>Vinod</td>
+                        <td>9654785215</td>
+                        <td>vinj@gmail.com</td>
+                        <td>PHP</td>
+                        <td><button type="button">View</button></td>
+                        <td><button type="button">Edit</button></td>
+                        <td><button type="button">Delete</button></td>
+                    </tr>
+                    <tr class="strips">
+                        <td><input type="checkbox"> 5.</td>
+                        <td>Mohit</td>
+                        <td>5784214587</td>
+                        <td>mohitj@gmail.com</td>
+                        <td>Python</td>
+                        <td><button type="button">View</button></td>
+                        <td><button type="button">Edit</button></td>
+                        <td><button type="button">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"> 6.</td>
+                        <td>Ram</td>
+                        <td>9874552145</td>
+                        <td>ramj@gmail.com</td>
+                        <td>Java</td>
+                        <td><button type="button">View</button></td>
+                        <td><button type="button">Edit</button></td>
+                        <td><button type="button">Delete</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer><h3>copyright@AmanPrajapati</h3></footer>
+</body>
+</html>
